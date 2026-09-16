@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c907db0c794f5b4bada7e6f49c379ba, type: 3}
+  m_Name: BirdSkinDatabase
+  m_EditorClassIdentifier: Assembly-CSharp::BirdSkinDatabase
+  birdSkinData:
+  - birdName: BirdYellow
+    birdSprite: {fileID: 1056323664804065294, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: 2682e68dad153ae4fb072cb07fd236b5, type: 2}
+  - birdName: BirdBlue
+    birdSprite: {fileID: 8959818511006310400, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: 66b841cb2d1270a4da8a1ba6475e307f, type: 2}
+  - birdName: BirdRed
+    birdSprite: {fileID: -2836295732086359070, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: f91e0881d9001594bb88f4a52c0fe105, type: 2}
+  - birdName: Bird
+    birdSprite: {fileID: -6436550963862677255, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
+    animatorOverrideController: {fileID: 22100000, guid: 72391fe6cda928c4e8196d31bc785342, type: 2}
