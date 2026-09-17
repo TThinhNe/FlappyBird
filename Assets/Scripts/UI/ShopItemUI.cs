@@ -12,7 +12,6 @@ public class ShopItemUI : MonoBehaviour
 
     private void Reset()
     {
-        // Hỗ trợ tự tìm reference khi kéo script vào prefab lần đầu
         button = GetComponent<Button>();
         skinImage = transform.Find("SkinImage")?.GetComponent<Image>();
         checkMark = transform.Find("CheckMark")?.gameObject;

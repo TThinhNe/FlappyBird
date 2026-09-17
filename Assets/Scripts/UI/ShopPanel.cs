@@ -3,14 +3,16 @@ using UnityEngine.UI;
 
 public class ShopPanel : Panel
 {
+    private const string PanelName = "ShopPanel";
+
     [Header("Tabs")]
     [SerializeField] private GameObject birdShopPanel;
     [SerializeField] private GameObject backgroundShopPanel;
 
     [Header("Buttons")]
-    [SerializeField] private Button birdShopButton;
-    [SerializeField] private Button backgroundShopButton;
-    [SerializeField] private Button closeButton;
+    [SerializeField] private Button birdShopButton;  
+    [SerializeField] private Button backgroundShopButton;  
+    [SerializeField] private Button closeButton;  
 
     private void Awake()
     {
@@ -39,6 +41,6 @@ public class ShopPanel : Panel
 
     private void OnCloseClicked()
     {
-        UIManager.Instance.ClosePanel(gameObject.name);
+        UIManager.Instance.ClosePanel(PanelName);
     }
 }

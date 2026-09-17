@@ -6,4 +6,9 @@ public class MainMenuPanel : Panel
     {
         GameManager.Instance.ShowTutorial();
     }
+
+    public void OnShopButtonClicked()
+    {
+        UIManager.Instance.OpenPanel("ShopPanel");
+    }
 }

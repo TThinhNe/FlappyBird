@@ -17,7 +17,27 @@ public class Bird : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
 
-        if (BirdSkinManager.Instance != null) BirdSkinManager.Instance.ApplySkinTo(this);
+        ApplyCurrentSkin();
+    }
+
+    private void OnEnable()
+    {
+        ApplyCurrentSkin();
+
+        if (BirdSkinManager.Instance != null)
+            BirdSkinManager.Instance.OnSkinChanged += ApplyCurrentSkin;
+    }
+
+    private void OnDisable()
+    {
+        if (BirdSkinManager.Instance != null)
+            BirdSkinManager.Instance.OnSkinChanged -= ApplyCurrentSkin;
+    }
+
+    private void ApplyCurrentSkin()
+    {
+        if (BirdSkinManager.Instance != null)
+            BirdSkinManager.Instance.ApplySkinTo(this);
     }
 
     void Update()

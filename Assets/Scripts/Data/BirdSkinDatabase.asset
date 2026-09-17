@@ -15,13 +15,13 @@ MonoBehaviour:
   birdSkinData:
   - birdName: BirdYellow
     birdSprite: {fileID: 1056323664804065294, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
-    animatorOverrideController: {fileID: 22100000, guid: 2682e68dad153ae4fb072cb07fd236b5, type: 2}
+    animatorOverrideController: {fileID: 22100000, guid: db6f83635d4da5744880aa574f9cfe33, type: 2}
   - birdName: BirdBlue
     birdSprite: {fileID: 8959818511006310400, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
-    animatorOverrideController: {fileID: 22100000, guid: 66b841cb2d1270a4da8a1ba6475e307f, type: 2}
+    animatorOverrideController: {fileID: 22100000, guid: 2f24679129683fe4ebe023e084959f51, type: 2}
   - birdName: BirdRed
     birdSprite: {fileID: -2836295732086359070, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
-    animatorOverrideController: {fileID: 22100000, guid: f91e0881d9001594bb88f4a52c0fe105, type: 2}
+    animatorOverrideController: {fileID: 22100000, guid: c1959df406324f34db48e1f693615f4a, type: 2}
   - birdName: Bird
     birdSprite: {fileID: -6436550963862677255, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
-    animatorOverrideController: {fileID: 22100000, guid: 72391fe6cda928c4e8196d31bc785342, type: 2}
+    animatorOverrideController: {fileID: 22100000, guid: 16dddecc14d91b44cba69d343529c52d, type: 2}

@@ -21,11 +21,8 @@ public class BirdSkinManager : Singleton<BirdSkinManager>
     {
         PlayerPrefs.SetString(PrefKey, birdName);
         PlayerPrefs.Save();
-        OnSkinChanged?.Invoke();
 
-        Bird activeBird = FindObjectOfType<Bird>();
-        if (activeBird != null)
-            ApplySkinTo(activeBird);
+        OnSkinChanged?.Invoke();
     }
 
     public void ApplySkinTo(Bird bird)

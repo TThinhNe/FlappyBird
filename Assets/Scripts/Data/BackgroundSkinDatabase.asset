@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BackgroundSkinDatabase
   m_EditorClassIdentifier: Assembly-CSharp::BackgroundSkinDatabase
   backgroundSkinData:
-  - backgroundName: BackGround_Day
+  - backgroundName: Background_Day
     backgroundSprite: {fileID: -3028843797619237106, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}
-  - backgroundName: BackGround_Night
+  - backgroundName: Background_Night
     backgroundSprite: {fileID: -5001303908148437828, guid: 966473edc07f58d4592f354ca84f2e06, type: 3}

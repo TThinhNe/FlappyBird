@@ -12,8 +12,18 @@ public class GameManager : Singleton<GameManager>
 
     public bool IsRunning => IsPlaying && !IsPaused;
     public bool IsGroundRunning => (IsTutorial || IsPlaying) && !IsPaused;
-    
-    void Start()
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (_autoStartOnLoad)
         {
@@ -49,7 +59,7 @@ public class GameManager : Singleton<GameManager>
     public void PauseGame()
     {
         if (!IsPlaying || IsGameOver) return;
-        
+
         IsPaused = true;
         UIManager.Instance.CloseAllPanel();
         UIManager.Instance.OpenPanel("PausePanel");
@@ -85,6 +95,10 @@ public class GameManager : Singleton<GameManager>
     public void GoToMenu()
     {
         _autoStartOnLoad = false;
+        IsPlaying = false;
+        IsGameOver = false;
+        IsPaused = false;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

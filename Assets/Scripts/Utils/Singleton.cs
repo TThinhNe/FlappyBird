@@ -3,6 +3,7 @@ using UnityEngine;
 public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 {
     public static T Instance { get; private set; }
+
     [SerializeField] private bool dontDestroyOnLoad = true;
 
     public virtual void Awake()
@@ -13,8 +14,8 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
             return;
         }
 
-        Instance = (T)FindFirstObjectByType(typeof(T));
-        
+        Instance = (T)(object)this;
+
         if (dontDestroyOnLoad)
         {
             DontDestroyOnLoad(gameObject);
